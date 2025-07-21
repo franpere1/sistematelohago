@@ -7,6 +7,7 @@ export default defineConfig(() => ({
   server: {
     host: "::",
     port: 8080,
+    historyApiFallback: true, // 👈 esto es lo que faltaba
   },
   plugins: [dyadComponentTagger(), react()],
   resolve: {
@@ -15,3 +16,4 @@ export default defineConfig(() => ({
     },
   },
 }));
+
